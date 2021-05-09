@@ -9,8 +9,8 @@ import xlsxwriter
 import requests
 
 
-# paste bin link all content private.Click on the link to download.
-# download pastebin link all content private asap enjoyyy....
+# paste bin link all content private.Click on the link to download.
+# download pastebin link all content private asap enjoyyy....
 
 # Download spreadsheet from URL
 links_to_read_from = int(input("Enter row number FROM (ENTER ROW NUMBER): ")) 
@@ -46,8 +46,8 @@ MEGA LINK (Mega won't be re-uploaded if it goes down, so please Download or impo
 
 # Data
 headers = ["Username", "Name", "Link"]
-lv_content=["# paste bin link all content private.Click on the link to download.",
-"# download pastebin link all content private asap enjoyyy...."]
+lv_content=["# paste bin link all content private.Click on the link to download.",
+"# download pastebin link all content private asap enjoyyy...."]
 
 name = df["Name"].tolist()
 username = df["Username"].tolist()
@@ -96,20 +96,10 @@ worksheet.write_row('A1', headers)
 
 worksheet.write_column('A2',username)
 worksheet.write_column('B2',name)
-worksheet.write_column('C2',rentry_url)
+worksheet.write_column('C'+ str(links_to_read_from), rentry_url)
 
 worksheet.write_column('D1',lv_content)
 
 workbook.close()
 
-# Write to txt file - rentry links
-
-rentry_no = input("Enter file number for rentry text file: ")
-
-f = open("rentry_links_"+ rentry_no + ".txt", "w", encoding='utf-8')
-
-for index in range(0,len(rentry_url)):
-    f.write("\n\n=============================="+ username[index] + "==============================\n\n")
-    f.write(rentry_url[index])
-    
-f.close()
+print("Suggested Next Row : " + str(links_to_read_from + len(rentry_url) + 1))
