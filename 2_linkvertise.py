@@ -24,7 +24,8 @@ telegram='''
         📲 Follow on Telegram 📲 - https://t.me/nsfw_chick_backup
         |
         💾 Join Backup Channel 💾 - https://t.me/nsfw_chick
-
+        |
+        👾 Join Discord Server 👾 - https://discord.gg/eSYrfWnxcX
         '''
 reddit = '''
 ✅ Click for Onlyfans ✅ - {0}
@@ -32,6 +33,8 @@ reddit = '''
 ❓How To Use Links❓ - https://reddit.com/r/howto/comments/k4gyr4/how_to_use_linkvertise/
 
 📲 Follow on Telegram 📲 - https://t.me/nsfw_chick_backup
+
+👾 Join Discord Server 👾 - https://discord.gg/eSYrfWnxcX
 '''
 
 username=[]
