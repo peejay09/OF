@@ -38,6 +38,8 @@ How to use : https://reddit.com/r/howto/comments/k4gyr4/how_to_use_linkvertise/
 
 Telegram : https://t.me/nsfw_chick_backup
 
+Discord : https://discord.gg/eSYrfWnxcX
+
 Spreadsheet Containing ALL MEGA LINKS : https://docs.google.com/spreadsheets/d/1-E-1EPLt0XSxAjek-8ufV-rZ6ggKaqyIIHmgCvr_o6k/edit#gid=0
 
 MEGA LINK (Mega won't be re-uploaded if it goes down, so please Download or import to your own drive!)
