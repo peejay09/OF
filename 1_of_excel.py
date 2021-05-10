@@ -32,7 +32,7 @@ Make sure to download the images/videos in the Mega.nz to your device, as the fo
 
 Follow us via these links below for Daily Free OnlyFans Content. We drop only Up-to-date OnlyFans content, none of that old recycled content that other groups post.
 
-Reddit : https://www.reddit.com/user/nsfw_chick
+Reddit : https://www.reddit.com/r/nsfw_chick_of/
 
 How to use : https://reddit.com/r/howto/comments/k4gyr4/how_to_use_linkvertise/
 
