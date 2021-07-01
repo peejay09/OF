@@ -38,7 +38,11 @@ How to use : https://reddit.com/r/howto/comments/k4gyr4/how_to_use_linkvertise/
 
 Telegram : https://t.me/nsfw_chick_backup
 
-Discord : https://discord.gg/eSYrfWnxcX
+Discord : https://discord.gg/YX9SpUWzA8
+
+Request : https://discord.gg/Me7mwRpd32
+
+Donate : https://rentry.org/u3wvf
 
 Spreadsheet Containing ALL MEGA LINKS : https://docs.google.com/spreadsheets/d/1-E-1EPLt0XSxAjek-8ufV-rZ6ggKaqyIIHmgCvr_o6k/edit#gid=0
 
@@ -87,21 +91,43 @@ try:
 except:
     print("Something went wrong")
 
-# Write to excel
-print(rentry_url)
-number=input("Enter file number: ")
+try:
+    # Write to excel
+    print(rentry_url)
+    number=input("Enter file number: ")
 
-workbook = xlsxwriter.Workbook('rentry' + number + '.xlsx')
-worksheet = workbook.add_worksheet()
+    workbook = xlsxwriter.Workbook('rentry' + number + '.xlsx')
+    worksheet = workbook.add_worksheet()
 
-worksheet.write_row('A1', headers)
+    worksheet.write_row('A1', headers)
 
-worksheet.write_column('A2',username)
-worksheet.write_column('B2',name)
-worksheet.write_column('C'+ str(links_to_read_from), rentry_url)
+    worksheet.write_column('A2',username)
+    worksheet.write_column('B2',name)
+    worksheet.write_column('C'+ str(links_to_read_from), rentry_url)
 
-worksheet.write_column('D1',lv_content)
+    worksheet.write_column('D1',lv_content)
 
-workbook.close()
+    workbook.close()
 
-print("Suggested Next Row : " + str(links_to_read_from + len(rentry_url) + 1))
+except:
+    print("Something went wrong")
+
+
+# Write to txt file - rentry links
+
+rentry_no = input("Enter file number for rentry text file: ")
+
+f = open("rentry_links_"+ rentry_no + ".txt", "w", encoding='utf-8')
+
+for index in range(0,len(rentry_url)):
+    f.write(rentry_url[index])
+    f.write("\n")
+
+f.close() 
+
+
+print("Suggested Next FROM Row : " + str(links_to_read_from + len(rentry_url)))
+
+print("Suggested Next TO Row : " + str(links_to_read_from + len(rentry_url) + 4))
+
+# print("Total Number of Rows : " + str(links_to_read_from + len(name)))
