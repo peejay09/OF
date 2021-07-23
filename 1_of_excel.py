@@ -7,7 +7,7 @@ import time
 import pandas as pd
 import xlsxwriter
 import requests
-
+import openpyxl
 
 # paste bin link all content private.Click on the link to download.
 # download pastebin link all content private asap enjoyyy....
@@ -96,18 +96,26 @@ try:
     print(rentry_url)
     number=input("Enter file number: ")
 
-    workbook = xlsxwriter.Workbook('rentry' + number + '.xlsx')
-    worksheet = workbook.add_worksheet()
+    # workbook = xlsxwriter.Workbook('rentry' + number + '.xlsx')
+    # worksheet = workbook.add_worksheet()
 
-    worksheet.write_row('A1', headers)
+    # worksheet.write_row('A1', headers)
 
-    worksheet.write_column('A2',username)
-    worksheet.write_column('B2',name)
-    worksheet.write_column('C'+ str(links_to_read_from), rentry_url)
+    # worksheet.write_column('A2',username)
+    # worksheet.write_column('B2',name)
+    # worksheet.write_column('C'+ str(links_to_read_from), rentry_url)
 
-    worksheet.write_column('D1',lv_content)
+    # worksheet.write_column('D1',lv_content)
 
-    workbook.close()
+    # workbook.close()
+
+    # POC - Code to update excel file 
+
+    # xfile = openpyxl.load_workbook('rentry' + number + '.xlsx')
+
+    # sheet = xfile.get_sheet_by_name('Sheet1')
+    # sheet['Link'] = 'hello world'
+    # xfile.save('text2.xlsx')
 
 except:
     print("Something went wrong")
@@ -128,6 +136,6 @@ f.close()
 
 print("Suggested Next FROM Row : " + str(links_to_read_from + len(rentry_url)))
 
-print("Suggested Next TO Row : " + str(links_to_read_from + len(rentry_url) + 4))
+print("Suggested Next TO Row : " + str(links_to_read_from + len(rentry_url) + 6))
 
 # print("Total Number of Rows : " + str(links_to_read_from + len(name)))
