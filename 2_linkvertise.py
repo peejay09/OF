@@ -33,7 +33,7 @@ telegram='''
         |
         💾 Join Backup Channel 💾 - https://t.me/nsfw_chick
         |
-        👾 Join Discord Server 👾 - https://discord.gg/YX9SpUWzA8
+        👾 Join Discord Server 👾 - https://discord.gg/wspe8KTsje
         |
         ✍️ Post Your Requests ✍️ - https://discord.gg/Me7mwRpd32
         '''
@@ -44,7 +44,7 @@ reddit = '''
 
 📲 Follow on Telegram 📲 - https://t.me/nsfw_chick_backup
 
-👾 Join Discord Server 👾 - https://discord.gg/YX9SpUWzA8
+👾 Join Discord Server 👾 - https://discord.gg/wspe8KTsje
 '''
 
 try:
