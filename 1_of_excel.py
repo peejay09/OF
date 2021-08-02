@@ -38,7 +38,7 @@ How to use : https://reddit.com/r/howto/comments/k4gyr4/how_to_use_linkvertise/
 
 Telegram : https://t.me/nsfw_chick_backup
 
-Discord : https://discord.gg/YX9SpUWzA8
+Discord : https://discord.gg/wspe8KTsje
 
 Request : https://discord.gg/Me7mwRpd32
 
@@ -92,22 +92,27 @@ except:
     print("Something went wrong")
 
 try:
-    # Write to excel
     print(rentry_url)
-    number=input("Enter file number: ")
+    
+    # Write to excel
 
-    # workbook = xlsxwriter.Workbook('rentry' + number + '.xlsx')
-    # worksheet = workbook.add_worksheet()
+    char = input("Do you want to write to excel? (y/n) : ")
+    if(char=='y' or char=='Y'):
 
-    # worksheet.write_row('A1', headers)
+        number=input("Enter file number: ")
 
-    # worksheet.write_column('A2',username)
-    # worksheet.write_column('B2',name)
-    # worksheet.write_column('C'+ str(links_to_read_from), rentry_url)
+        workbook = xlsxwriter.Workbook('rentry' + number + '.xlsx')
+        worksheet = workbook.add_worksheet()
 
-    # worksheet.write_column('D1',lv_content)
+        worksheet.write_row('A1', headers)
 
-    # workbook.close()
+        worksheet.write_column('A2',username)
+        worksheet.write_column('B2',name)
+        worksheet.write_column('C'+ str(links_to_read_from), rentry_url)
+
+        worksheet.write_column('D1',lv_content)
+
+        workbook.close()
 
     # POC - Code to update excel file 
 
