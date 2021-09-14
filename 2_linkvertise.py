@@ -19,7 +19,7 @@ temp_username = df["Username"].tolist()
 link = df["Link"].tolist()
 
 #Text
-headline_reddit = '''👙 DM FOR {0} {1} Onlyfans Mega Link Leak **DO NOT ASK IN COMMENTS** 👅'''
+headline_reddit = '''👙 DM FOR {0} {1} Onlyfans Mega Link Leak **LINK IN THE COMMENTS ALSO** 👅'''
 headline_telegram = '''👙 {0} {1} Onlyfans Mega Link Leak 👅'''
 
 telegram='''
@@ -27,24 +27,41 @@ telegram='''
         |
         ❓ How To Use Links❓ - https://reddit.com/r/howto/comments/k4gyr4/how_to_use_linkvertise/ 
         | 
-        📲 Follow on Telegram 📲 - https://t.me/nsfw_chick_backup
+        📲 Follow on Telegram 📲 - https://t.me/nsfw_chick
         |
         📝 All Links Till Now 📝 - https://docs.google.com/spreadsheets/d/1-E-1EPLt0XSxAjek-8ufV-rZ6ggKaqyIIHmgCvr_o6k/edit#gid=0
         |
-        💾 Join Backup Channel 💾 - https://t.me/nsfw_chick
+        💾 Join Backup Channel 💾 - https://t.me/nsfw_chick_2
         |
         👾 Join Discord Server 👾 - https://discord.gg/wspe8KTsje
         |
         ✍️ Post Your Requests ✍️ - https://discord.gg/Me7mwRpd32
+        |
+        🩸 Please Donate 🩸 - https://rentry.org/u3wvf
         '''
 reddit = '''
+✅ Click for Onlyfans ✅ - https://rentry.org/vbrh3
+
 ✅ Click for Onlyfans ✅ - {0}
 
 ❓ How To Use Links❓ - https://reddit.com/r/howto/comments/k4gyr4/how_to_use_linkvertise/
 
-📲 Follow on Telegram 📲 - https://t.me/nsfw_chick_backup
+📲 Follow on Telegram 📲 - https://t.me/nsfw_chick
 
 👾 Join Discord Server 👾 - https://discord.gg/wspe8KTsje
+
+📝 Join our Reddit 📝 - https://www.reddit.com/r/nsfw_chick_of/
+
+🩸 Please Donate 🩸 - https://rentry.org/u3wvf
+
+💾 For ALL Direct MEGA Links JOIN PREMIUM @ $10 (Paypal/Crypto). Direct Message on : 💾
+
+➡️ Telegram : @error404
+
+➡️ Discord : @nswf_chick#2456
+
+➡️ Reddit : @Appropriate-Aerie-59
+
 '''
 
 try:
