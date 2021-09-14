@@ -23,7 +23,7 @@ if(char=='y' or char=='Y'):
     open('mega.xlsx', 'wb').write(r.content)
 
 # Excel File
-df = pd.read_excel ('mega.xlsx')
+df = pd.read_excel ('mega.xlsx')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 # Content
 default_content = """Want more content?
@@ -36,7 +36,7 @@ Reddit : https://www.reddit.com/r/nsfw_chick_of/
 
 How to use : https://reddit.com/r/howto/comments/k4gyr4/how_to_use_linkvertise/
 
-Telegram : https://t.me/nsfw_chick_backup
+Telegram : https://t.me/nsfw_chick
 
 Discord : https://discord.gg/wspe8KTsje
 
@@ -93,8 +93,18 @@ except:
 
 try:
     print(rentry_url)
+    print(username)
+    print(name)
     
     # Write to excel
+    str_username = []
+    str_name = []
+    
+    for user in username:
+        str_username.append(str(user))
+    
+    for n in name:
+        str_name.append(str(n))
 
     char = input("Do you want to write to excel? (y/n) : ")
     if(char=='y' or char=='Y'):
@@ -106,8 +116,8 @@ try:
 
         worksheet.write_row('A1', headers)
 
-        worksheet.write_column('A2',username)
-        worksheet.write_column('B2',name)
+        worksheet.write_column('A2',str_username)
+        worksheet.write_column('B2',str_name)
         worksheet.write_column('C'+ str(links_to_read_from), rentry_url)
 
         worksheet.write_column('D1',lv_content)
